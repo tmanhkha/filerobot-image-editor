@@ -6,7 +6,7 @@ import Range from '../Range';
 import Select from '../Shared/Select';
 
 export default class Add extends Component {
-  
+
   renderSettings = (selectedShape) => {
     const { shapeOperations, t } = this.props;
     const { variant, opacity, color, stroke = {} } = selectedShape;

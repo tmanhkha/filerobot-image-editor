@@ -22,7 +22,7 @@ class ImageEditorWrapper extends Component {
     config.theme = config.theme || {};
     config.theme.colors = config.theme.colors || {};
     config.theme.fonts = config.theme.fonts || {};
-    config.colorScheme = config.colorScheme || 'dark';
+    config.colorScheme = config.colorScheme || 'light';
     config.platform = config.platform || 'filerobot';
 
     this.state = {
@@ -58,7 +58,7 @@ class ImageEditorWrapper extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.show !== prevProps.show) {
       if (this.props.show) { this.open(this.props.src); } else { this.close(); }
-    }    
+    }
   }
 
   processConfig = (config) => {

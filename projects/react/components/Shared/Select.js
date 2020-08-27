@@ -141,22 +141,22 @@ const SelectedItem = styled(FileInput).attrs()`
   padding: 9px 12px;
   cursor: pointer;
   ${p => p.relativePosition && `position: relative;`}
-  
+
   :hover {
     opacity: ${p => p.styles.opacity && 1};
   }
-  
+
   :after {
     content: '';
     position: absolute;
     top: 50%;
     margin-top: -2.5px;
     right: 5px;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    
+
     border-top: 5px solid #fff;
   }
 `;
@@ -183,7 +183,7 @@ const SelectDropdown = styled.ul`
 const SelectDropdownItem = styled.li`
   cursor: pointer;
   ${p => getItemStyles(p.size)}
-  
+
   :hover {
     background: ${p => p.theme.colors.primaryBg};
   }

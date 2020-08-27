@@ -85,7 +85,7 @@ export default class extends Component {
   loadImage = () => {
     let { src } = this.props;
     const { reduceBeforeEdit: { mode, widthLimit, heightLimit } = {}, watermark } = this.state;
-    
+
     if (src instanceof Blob) { src = URL.createObjectURL(src); }
 
     const splittedSrc = src.split('/');
